@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management</title>
+
+    <link rel="stylesheet" href="students.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>👨‍🎓 Student Management</h1>
+
+    <form id="studentForm">
+
+        <input
+            type="text"
+            id="studentName"
+            placeholder="Student Name"
+            required>
+
+        <input
+            type="text"
+            id="fatherName"
+            placeholder="Father Name">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email">
+
+        <input
+            type="text"
+            id="mobile"
+            placeholder="Mobile Number"
+            required>
+
+        <select id="course" required>
+
+            <option value="">Select Course</option>
+
+        </select>
+
+        <input
+            type="number"
+            id="fees"
+            placeholder="Total Fees">
+
+        <input
+            type="date"
+            id="joiningDate">
+
+        <button type="submit">
+
+            ➕ Add Student
+
+        </button>
+
+    </form>
+
+    <hr>
+
+    <h2>Student List</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Student ID</th>
+
+                <th>Name</th>
+
+                <th>Username</th>
+
+                <th>Course</th>
+
+                <th>Mobile</th>
+
+                <th>Fees</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="studentList">
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <button onclick="window.location.href='dashboard.html'">
+
+        ⬅ Back To Dashboard
+
+    </button>
+
+</div>
+
+<script type="module" src="students.js"></script>
+
+</body>
+
+</html>

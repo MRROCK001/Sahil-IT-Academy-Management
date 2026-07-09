@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h2>Sahil IT Academy</h2>
+
+        <ul>
+
+            <li onclick="window.location.href='dashboard.html'">
+                <i class="fa-solid fa-house"></i> Dashboard
+            </li>
+
+            <li onclick="window.location.href='students.html'">
+                <i class="fa-solid fa-user-graduate"></i> Students
+            </li>
+
+            <li onclick="window.location.href='courses.html'">
+                <i class="fa-solid fa-book"></i> Courses
+            </li>
+
+            <li onclick="window.location.href='certificate.html'">
+                <i class="fa-solid fa-certificate"></i> Certificate
+            </li>
+
+            <li id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i> Logout
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="main">
+
+        <div class="topbar">
+
+            <h1>Admin Dashboard</h1>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h2 id="studentCount">0</h2>
+
+                <p>Total Students</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="courseCount">0</h2>
+
+                <p>Total Courses</p>
+
+            </div>
+
+        </div>
+
+        <div class="welcome">
+
+            <h2>Welcome, Sahil 👋</h2>
+
+            <p>Manage your complete academy from here.</p>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="dashboard.js"></script>
+
+</body>
+
+</html>
